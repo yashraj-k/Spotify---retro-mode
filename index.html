@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="icon" href="./assets/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        @font-face {
+            font-family: 'MyFont';
+            src: url('./assets/Choise3.otf') format('opentype');
+        }
+        @font-face {
+            font-family: 'SecondaryFont';
+            src: url('./assets/Choice1.otf') format('opentype');
+        }
+    </style>
+    <script>
+        function toggleRetroTheme() {
+            document.body.classList.toggle('retro-theme');
+        }
+    </script>
+</head>
+<body>
+    <div class="main">
+        <div class="sidebar">
+            <div class="nav">
+                <div class="nav-option" style="opacity: 1;">
+                    <i class="fa-solid fa-house"></i>
+                    <a href="#">HOME</a>
+                </div>
+                <div class="nav-option">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <a href="#">Search</a>
+                </div>
+
+            </div>
+            <div class="library">
+                <div class="options">
+                    <div class="lib-option nav-option">
+                        <img src="./assets/library_icon.png" >
+                        <a href="#">Your Library</a>
+                    </div>
+                    <div class="icons">
+                        <i class="fa-solid fa-plus"></i>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                    
+                </div>
+                <div class="lib-box">
+                    <div class="box">
+                        <div class="box-p1">Create your first playlist</div>
+                        <p class="box-p2">It's easy we'll help you</p>
+                        <button class="badge"> Create playlist</button>
+                    </div>
+                    <div class="box">
+                        <div class="box-p1">Let's find some podcast to follow</div>
+                        <p class="box-p2">We'll keep you updated on new episodes</p>
+                        <button class="badge"> Browse Podcasts</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="sticky-nav">
+                <div class="sticky-nav-icons">
+                    <img src="/assets/backward_icon.png" class="img1">
+                    <img src="/assets/forward_icon.png" class="hide">
+                </div>
+                <div class="spotify icon">
+                    <img src="/assets/logo.png" style="height: 5rem; margin-left:10rem;">
+                    <span style="font-size: 10px; font-style: italic;">SPOTIFY.com</span>
+                </div>
+                <div class="sticky-nav-options">
+                    <button class="badge nav-items hide"> Explore Premium</button>
+                    <button class="badge nav-items darkmode"> <i class="fa-regular fa-circle-down"></i> Install App</button>
+                    <div class="retrobuttonlg">
+                        <button class="badge nav-items" onclick="toggleRetroTheme()">Retro Theme</button>
+                    </div>
+                </div>
+                
+                
+                
+            </div>
+            
+                <h1 style="margin-left: 1.5rem;">Recently Played</h1>
+                <div class="cards-container">
+                    <div class="card">
+                        <img src="/assets/card1img.jpeg" class="card-img">
+                        <p class="card-title" style="font-weight: 700;">Top - Global</p>
+                        <p class="card-info"style="opacity: 0.7;">Your daily updates of the most played tracks...</p>
+                    </div>
+                </div>
+                <h1 style="margin-left: 1.5rem;">Top songs for you</h1>
+                <div class="cards-container">
+                    <div class="card">
+                        <img src="/assets/card2img.jpeg" class="card-img">
+                        <p class="card-title" style="font-weight: 700;">Mahiye Jinna Sohna</p>
+                        <p class="card-info"style="opacity: 0.7;">Song by Darshan Raval - 2023</p>
+                    </div>
+                    <div class="card">
+                        <img src="/assets/card3img.jpeg" class="card-img">
+                        <p class="card-title" style="font-weight: 700;">LOFI -MIX</p>
+                        <p class="card-info"style="opacity: 0.7;">Your daily updates of the most played tracks...</p>
+                    </div>
+                    <div class="card">
+                        <img src="/assets/card4img.jpeg" class="card-img">
+                        <p class="card-title" style="font-weight: 700;">Top 10 - India</p>
+                        <p class="card-info"style="opacity: 0.7;">Top 10 Indian songs and music trend...</p>
+                    </div>
+                    <div class="card">
+                        <img src="/assets/card3img.jpeg" class="card-img">
+                        <p class="card-title" style="font-weight: 700;">Top 10 - LOFI</p>
+                        <p class="card-info"style="opacity: 0.7;">Artist - Rahat Fateh Ali Khan</p>
+                    </div>
+                    <div class="card">
+                        <img src="/assets/card2img.jpeg" class="card-img">
+                        <p class="card-title" style="font-weight: 700;">Top 30 - Global</p>
+                        <p class="card-info"style="opacity: 0.7;">Your daily updates of the most played tracks...</p>
+                    </div>
+                </div>
+                <h1 style="margin-left: 1.5rem;">Featured Charts</h1>
+                <div class="cards-container">
+                    <div class="card">
+                        <img src="/assets/card5img.jpeg" class="card-img">
+                        <p class="card-title" style="font-weight: 700;">Top 10 - Global</p>
+                        <p class="card-info"style="opacity: 0.7;">Your most potential next favourite</p>
+                    </div>
+                    <div class="card">
+                        <img src="/assets/card6img.jpeg" class="card-img">
+                        <p class="card-title" style="font-weight: 700;">Top 30 - Global</p>
+                        <p class="card-info"style="opacity: 0.7;">Just one click to your favourite music</p>
+                    </div>
+                    <div class="card">
+                        <img src="/assets/card1img.jpeg" class="card-img">
+                        <p class="card-title" style="font-weight: 700;">Top 50 - Global</p>
+                        <p class="card-info"style="opacity: 0.7;">Your daily updates of the most played tracks...</p>
+                    </div>
+                </div>
+                <div class="footer">
+                    <div class="line"></div>
+                </div>
+            
+        </div>
+        
+        <div class="music-player"> 
+            <div class="album">
+                <img src="/assets/card4img.jpeg" >
+                <div class="cardinfo" >
+                    <p style="font-weight: bold;">Naa Ready</p>
+                    <p style="opacity: 0.7; margin-top: -0.8rem;">David Kushner</p>
+                </div>
+                <div class="album-icons">
+                    <i class="fa-regular fa-heart hovereffect" ></i>
+                    <i class="fa-solid fa-desktop hovereffect" ></i>
+                </div>
+                
+            </div>
+            <div class="player">
+                <div class="player-controls">
+                    <img src="./assets/player_icon1.png" class="player-control-item" style="height:0.7rem;">
+                    <img src="./assets/player_icon2.png" class="player-control-item" style="height:1rem;">
+                    <img src="./assets/player_icon3.png" class="player-control-item m-button" style="opacity: 1;">
+                    <img src="./assets/player_icon4.png" class="player-control-item" style="height:1rem;">
+                    <img src="./assets/player_icon5.png" class="player-control-item" style="height:0.7rem;">
+                </div>
+                <div class="playback-bar">
+                    <span>00:00</span>
+                    <input type="range" min="0" max="100" class="progress-bar" step="1">
+                    <span>3:36</span>
+                </div>
+            </div>
+            <div class="controls">
+                <div class="controls-icon">
+                    <i class="fa-regular fa-circle-play"></i>
+                    <i class="fa-solid fa-microphone"></i>
+                    <i class="fa-solid fa-layer-group"></i>
+                    <i class="fa-solid fa-server"></i>
+                </div>
+                <div class="volume-bar">
+                    <i class="fa-solid fa-volume-high"></i>
+                    <input type="range" min="0" max="100" class="v-bar" step="1">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
+
+
+<style>
+    .retro-theme .body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #4c4d4d;
+    }
+    .retro-theme {
+        background-color: #f0ece3;
+        color: white;
+        font-family: 'MyFont', sans-serif;
+        letter-spacing: 0.1rem;
+        font-size: 17px;
+    }
+    
+    .retro-theme .sidebar {
+        background-color: #252525;
+    }
+    .retro-theme h1 {
+    color: #fef0cc;
+    font-style: italic;
+    font-weight: bold;
+    }
+    .retro-theme .box{
+        color: white;
+        background-color:#4c4c4d ;
+
+    }
+    
+    .retro-theme .library {
+        background-color: #82b2b4;
+        font-weight: bold;
+    }
+    
+    .retro-theme .main-content,.retro-theme .footer {
+        background-color: #82b2b4;
+    }
+    
+    .retro-theme .music-player {
+        background-color: #252525;
+    }
+    
+    .retro-theme .sticky-nav {
+        background: linear-gradient(135deg, #252525,#f2cc8f);
+        border-color: white;
+    }
+    .retro-theme span{
+        color: white;
+        font-weight: bold;
+    }
+    
+    .retro-theme .card {
+        background: linear-gradient(135deg, #f2cc8f, #81b29a);
+        color: #333333;
+        box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    
+    .retro-theme a {
+        color: #3d405b;
+    }
+    
+    .retro-theme .badge {
+        background: linear-gradient(135deg, #81b29a, #e07a5f);
+        color: black;
+        border: 1px solid #333333;
+    }
+    .retro-theme .music-player {
+    font-family: 'SecondaryFont', sans-serif;
+    }
+    
+    
+    
+    .retro-theme .nav {
+        background-color: #82b2b4;
+        font-weight: bold;
+    }
+    </style>
+    
